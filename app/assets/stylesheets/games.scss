@@ -29,6 +29,16 @@ body {
     text-align: center;
 }
 
+.score {
+    margin: 20px 0;
+    &--blue {
+        background: linear-gradient(115deg, rgba($main, .9), rgba($main, .7));
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+    }
+}
+
 .letters-display {
     display: flex;
     justify-content: space-around;

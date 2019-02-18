@@ -1,5 +1,13 @@
 <h1 class="title text-center">New Game</h1>
 
+<section class="score text-center">
+    <p>Score
+        <span class="score--blue">
+            <%= @score %>
+        </span>
+    </p>
+</section>
+
 <section class="letters-display">
     <% @letters.each do |letter| %>
         <div class="letters-display__letter">
@@ -15,5 +23,7 @@
             <input type="text" name="word" placeholder="Write a word here..." class="form__text">
             <input name="letters" type="hidden" value=<%="#{@letters.join('')}" %>>
             <input type="submit" class="form__submit">
+
+
     </form>
 </section>
