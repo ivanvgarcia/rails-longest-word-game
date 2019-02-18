@@ -1,0 +1,94 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$bg-color: rgb(224, 224, 224);
+$main: rgb(19, 74, 224);
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    background: $bg-color;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.title {
+    font-weight: 100;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.letters-display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &__letter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: $main;
+        color: white;
+        padding: 15px;
+        margin-bottom: 10px;
+        font-size: 40px;
+        font-weight: 100;
+        transform: translateY(0);
+        transition: transform .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        box-shadow: 0 3px 8px rgba($color: #6d6d6d, $alpha: .7);
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.form-section {
+    padding: 2rem 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        height: 2rem;
+        font-size: 25px;
+        flex: 1;
+        padding-left: 10px;
+    }
+    &__submit {
+        background: $main;
+        align-self: stretch;
+        border: none;
+        font-size: 20px;
+        font-weight: 100;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+}
+
+.message {
+    &__display {
+        margin: 0 0 50px 0;
+    }
+    &__button {
+        background: $main;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+}
